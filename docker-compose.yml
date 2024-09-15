@@ -2,8 +2,6 @@
 ## -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATAABSE=apisolid 
 # -p 5432:5432 bitnami/postgresql
 
-version: '3'
-
 services:
   api-solid-pg:
     image: bitnami/postgresql
