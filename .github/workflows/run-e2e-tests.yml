@@ -30,6 +30,8 @@ jobs:
           cache: 'pnpm'   
 
       - run: pnpm install --frozen-lockfile
+      
+      - run: pnpm exec prisma generate
 
       - run: pnpm run test:e2e
         env: 
